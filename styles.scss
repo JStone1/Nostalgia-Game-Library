@@ -1,0 +1,11 @@
+@mixin centerContent($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @include centerContent(column);
+  background-color: red;
+}
