@@ -1,0 +1,33 @@
+@import "./_mixins.scss";
+
+// variables
+$white: #eee;
+$black: #222;
+
+body {
+  background-color: $white;
+}
+
+header {
+  @include centerContent(column);
+  color: $white;
+  background-color: $black;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.horizontal-list {
+  @include horizontalList(15px);
+}
+
+.game-info {
+  @include centerContent(column);
+  border: 1px solid black;
+  p {
+    max-width: 300px;
+  }
+}
+
+.game-thumbnail {
+  width: 200px;
+}
