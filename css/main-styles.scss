@@ -1,8 +1,11 @@
 @import "./_mixins.scss";
+@import "./variables.scss";
 
-// variables
-$white: #eee;
-$black: #222;
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   background-color: $white;
@@ -13,6 +16,7 @@ header {
   color: $white;
   background-color: $black;
   width: 100%;
+  text-align: center;
   padding-top: 10px;
 }
 
@@ -22,12 +26,23 @@ header {
 
 .game-info {
   @include centerContent(column);
-  border: 1px solid black;
+  border: 1px solid $black;
   p {
     max-width: 300px;
   }
 }
 
 .game-thumbnail {
-  width: 200px;
+  width: 50%;
+}
+
+.ad {
+  @include centerContent(column);
+  border: $black solid 2px;
+  height: 80vh;
+}
+
+.page-description {
+  @include centerContent(column);
+  text-align: center;
 }
