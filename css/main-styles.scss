@@ -18,13 +18,29 @@ header {
   width: 100%;
   text-align: center;
   padding-top: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.page-description {
+  @include centerContent(column);
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+.row {
+  margin: 20px 0px;
 }
 
 .horizontal-list {
   @include horizontalList(15px);
 }
 
-.game-info {
+.game-card {
   @include centerContent(column);
   border: 1px solid $black;
   p {
@@ -40,9 +56,15 @@ header {
   @include centerContent(column);
   border: $black solid 2px;
   height: 80vh;
+  width: 10%;
+  position: fixed;
+  top: 17%;
 }
 
-.page-description {
-  @include centerContent(column);
-  text-align: center;
+#right-ad {
+  right: 0;
+}
+
+#left-ad {
+  left: 0;
 }
