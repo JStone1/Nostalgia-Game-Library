@@ -11,6 +11,10 @@ body {
   background-color: $white;
 }
 
+.row {
+  margin: 20px 0px;
+}
+
 header {
   @include centerContent(column);
   color: $white;
@@ -28,12 +32,10 @@ header {
   margin-bottom: 0px;
 }
 
-input[type="search"]:focus::placeholder {
-  color: transparent;
-}
-
-.row {
-  margin: 20px 0px;
+input[type="search"] {
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
 
 .horizontal-list {
@@ -43,28 +45,50 @@ input[type="search"]:focus::placeholder {
 .game-card {
   @include centerContent(column);
   border: 1px solid $black;
+  border-radius: 10px;
   p {
     max-width: 300px;
+  }
+  @include breakpoint(0px, 550px) {
+    margin-top: 25px;
   }
 }
 
 .game-thumbnail {
-  width: 50%;
+  min-width: 80%;
+  max-width: 100%;
 }
 
 .ad {
   @include centerContent(column);
   border: $black solid 2px;
-  height: 80vh;
+  height: 80%;
   width: 10%;
   position: fixed;
   top: 17%;
+  @include breakpoint(0px, 550px) {
+    height: 10vh;
+    width: 99%;
+    position: static;
+  }
 }
 
-#right-ad {
+#ad1 {
   right: 0;
+  @include breakpoint(0px, 550px) {
+    top: 25%;
+    left: 0;
+  }
 }
 
-#left-ad {
+#ad2 {
   left: 0;
+  @include breakpoint(0px, 550px) {
+    top: 25%;
+    left: 0;
+  }
+}
+
+#game-container {
+  @include centerContent(column);
 }

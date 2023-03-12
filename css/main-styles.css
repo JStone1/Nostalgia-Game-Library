@@ -6,6 +6,9 @@ body {
 body {
   background-color: #eee; }
 
+.row {
+  margin: 20px 0px; }
+
 header {
   display: flex;
   flex-direction: column;
@@ -30,9 +33,6 @@ header {
 input[type="search"]:focus::placeholder {
   color: transparent; }
 
-.row {
-  margin: 20px 0px; }
-
 .horizontal-list {
   display: flex;
   flex-direction: row;
@@ -50,12 +50,17 @@ input[type="search"]:focus::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #222; }
+  border: 1px solid #222;
+  border-radius: 10px; }
   .game-card p {
     max-width: 300px; }
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    .game-card {
+      margin-top: 25px; } }
 
 .game-thumbnail {
-  width: 50%; }
+  min-width: 80%;
+  max-width: 100%; }
 
 .ad {
   display: flex;
@@ -63,15 +68,34 @@ input[type="search"]:focus::placeholder {
   justify-content: center;
   align-items: center;
   border: #222 solid 2px;
-  height: 80vh;
+  height: 80%;
   width: 10%;
   position: fixed;
   top: 17%; }
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    .ad {
+      height: 10vh;
+      width: 99%;
+      position: static; } }
 
-#right-ad {
+#ad1 {
   right: 0; }
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    #ad1 {
+      top: 25%;
+      left: 0; } }
 
-#left-ad {
+#ad2 {
   left: 0; }
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    #ad2 {
+      top: 25%;
+      left: 0; } }
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=main-styles.css.map */
