@@ -59,7 +59,7 @@ input[type="search"]:focus::placeholder {
       margin-top: 25px; } }
 
 .game-thumbnail {
-  min-width: 80%;
+  width: 300px;
   max-width: 100%; }
 
 .ad {
