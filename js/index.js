@@ -1,5 +1,6 @@
-let mainHTML = document.querySelector("main");
+let mainHTML = document.querySelector("main"); // where HTML screens get injected
 
+// handlers for nav buttons
 let homeScreenButton = document.getElementById("nav-home-screen");
 let libraryScreenButton = document.getElementById("nav-library-screen");
 let aboutScreenButton = document.getElementById("nav-about-screen");
@@ -18,14 +19,9 @@ window.addEventListener("load", () => {
   let gameScreen = document.getElementById("game-page");
   let gameScreenButton = document.getElementById("game-page-button");
 
-  // event listeners that hide and reveal different pages
-  gameScreenButton.addEventListener("click", () => {
-    gameScreen.classList.remove("hidden");
-    homeScreen.classList.add("hidden");
-    libraryScreen.classList.add("hidden");
-    aboutScreen.classList.add("hidden");
-  });
+  homeScreen.classList.remove("hidden"); // shows home page on load
 
+  // event listeners that hide and reveal different pages
   homeScreenButton.addEventListener("click", () => {
     homeScreen.classList.remove("hidden");
     gameScreen.classList.add("hidden");
@@ -45,5 +41,12 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     homeScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
+  });
+
+  gameScreenButton.addEventListener("click", () => {
+    gameScreen.classList.remove("hidden");
+    homeScreen.classList.add("hidden");
+    libraryScreen.classList.add("hidden");
+    aboutScreen.classList.add("hidden");
   });
 });
