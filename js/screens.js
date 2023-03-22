@@ -5,7 +5,7 @@ let screenStates = {
       <p>This is the first screen</p>
     </section>
   </div>`,
-  gameScreen: `<div id="game-page"  class="hidden">
+  libraryScreen: `<div id="library-page"  class="hidden">
   <section class="row page-description">
     <h2>Game Library</h2>
     <p>
@@ -32,7 +32,7 @@ let screenStates = {
             the game Monster Munch. Information about the game Monster
             Munch.
           </p>
-          <button>Play now!</button>
+          <button id="game-page-button">Play now!</button>
         </article>
 
         <article class="four columns game-card">
@@ -92,4 +92,15 @@ let screenStates = {
       <p>This is the about screen</p>
     </section>
   </div>`,
+  gameScreen: `<div id="game-page" class="hidden">
+  <div id="game-container">
+    <iframe
+      src="https://preview.construct.net/#2p5sbei5"
+      width="600"
+      height="400"
+      scrolling="no"
+      noresize="noresize"
+    ></iframe>
+  </div>
+</div>`,
 };

@@ -72,3 +72,7 @@ input[type="search"]:focus::placeholder {
 #left-ad {
   left: 0;
 }
+
+#game-container {
+  @include centerContent(column);
+}

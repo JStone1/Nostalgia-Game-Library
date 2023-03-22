@@ -77,4 +77,10 @@ input[type="search"]:focus::placeholder {
 #left-ad {
   left: 0; }
 
+#game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 /*# sourceMappingURL=main-styles.css.map */
