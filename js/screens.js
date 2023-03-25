@@ -95,7 +95,7 @@ let screenStates = {
   gameScreen: `<div id="game-page" class="hidden">
   <div id="game-container">
     <iframe
-      src="https://preview.construct.net/#2p5sbei5"
+      src="https://preview.construct.net/#iq4jgdm2"
       width="600"
       height="400"
       scrolling="no"

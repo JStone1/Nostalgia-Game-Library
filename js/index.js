@@ -12,12 +12,14 @@ window.addEventListener("load", () => {
   mainHTML.insertAdjacentHTML("afterbegin", screenStates.aboutScreen);
   mainHTML.insertAdjacentHTML("afterbegin", screenStates.gameScreen);
 
-  // handlers for different screens
+  // handlers for different screens/elements
   let homeScreen = document.getElementById("home-page");
   let libraryScreen = document.getElementById("library-page");
   let aboutScreen = document.getElementById("about-page");
   let gameScreen = document.getElementById("game-page");
   let gameScreenButton = document.getElementById("game-page-button");
+  let gameIframe = document.querySelector("iframe");
+  let gameContainer = document.getElementById("game-container");
 
   homeScreen.classList.remove("hidden"); // shows home page on load
 
@@ -27,6 +29,7 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
+    gameContainer.removeChild(gameIframe);
   });
 
   libraryScreenButton.addEventListener("click", () => {
@@ -34,6 +37,7 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     homeScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
+    gameContainer.removeChild(gameIframe);
   });
 
   aboutScreenButton.addEventListener("click", () => {
@@ -41,6 +45,7 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     homeScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
+    gameContainer.removeChild(gameIframe);
   });
 
   gameScreenButton.addEventListener("click", () => {
@@ -48,5 +53,6 @@ window.addEventListener("load", () => {
     homeScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
+    gameContainer.appendChild(gameIframe);
   });
 });
