@@ -26,7 +26,7 @@ let screenStates = {
 
         <article class="four columns game-card">
           <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
+          <img class="game-thumbnail" src="/images/monster-munch.png" />
           <p>
             Information about the game Monster Munch. Information about
             the game Monster Munch. Information about the game Monster
@@ -37,7 +37,7 @@ let screenStates = {
 
         <article class="four columns game-card">
           <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
+          <img class="game-thumbnail" src="/images/monster-munch.png" />
           <p>
             Information about the game Monster Munch. Information about
             the game Monster Munch. Information about the game Monster
@@ -55,7 +55,7 @@ let screenStates = {
         <!--Empty Div-->
         <article class="four columns game-card">
           <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
+          <img class="game-thumbnail" src="/images/monster-munch.png" />
           <p>
             Information about the game Monster Munch. Information about
             the game Monster Munch. Information about the game Monster
@@ -66,7 +66,7 @@ let screenStates = {
 
         <article class="four columns game-card">
           <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
+          <img class="game-thumbnail" src="/images/monster-munch.png" />
           <p>
             Information about the game Monster Munch. Information about
             the game Monster Munch. Information about the game Monster
