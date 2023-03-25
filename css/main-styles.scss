@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   background-color: $white;
 }
@@ -87,6 +91,10 @@ input[type="search"] {
     top: 25%;
     left: 0;
   }
+}
+
+#game-container {
+  @include centerContent(column);
 }
 
 #game-container {
