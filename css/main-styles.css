@@ -53,12 +53,22 @@ input[type="search"]:focus::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #222; }
+  border: 3px solid #222;
+  min-height: fit-content;
+  justify-content: space-around;
+  height: 50vh; }
+  .game-card h3 {
+    text-decoration: underline; }
   .game-card p {
     max-width: 300px; }
+  .game-card button {
+    margin-top: 15px; }
+  @media screen and (min-width: 550px) and (max-width: 900px) {
+    .game-card h3 {
+      font-size: 2.5rem; } }
 
 .game-thumbnail {
-  width: 50%; }
+  width: 70%; }
 
 .ad {
   display: flex;

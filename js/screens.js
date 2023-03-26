@@ -25,24 +25,15 @@ let screenStates = {
         <!--Empty Div-->
 
         <article class="four columns game-card">
-          <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
-          <p>
-            Information about the game Monster Munch. Information about
-            the game Monster Munch. Information about the game Monster
-            Munch.
-          </p>
+          <h3>Drawmagination</h3>
+          <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
+
           <button id="game-page-button">Play now!</button>
         </article>
 
         <article class="four columns game-card">
-          <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
-          <p>
-            Information about the game Monster Munch. Information about
-            the game Monster Munch. Information about the game Monster
-            Munch.
-          </p>
+          <h3>Pong</h3>
+          <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
           <button>Play now!</button>
         </article>
 
@@ -50,42 +41,14 @@ let screenStates = {
         <!--Empty Div-->
       </div>
 
-      <div class="row">
-        <div class="two columns">&nbsp;</div>
-        <!--Empty Div-->
-        <article class="four columns game-card">
-          <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
-          <p>
-            Information about the game Monster Munch. Information about
-            the game Monster Munch. Information about the game Monster
-            Munch.
-          </p>
-          <button>Play now!</button>
-        </article>
-
-        <article class="four columns game-card">
-          <h3>Monster Munch</h3>
-          <img class="game-thumbnail" src="/images/monster munch.png" />
-          <p>
-            Information about the game Monster Munch. Information about
-            the game Monster Munch. Information about the game Monster
-            Munch.
-          </p>
-          <button>Play now!</button>
-        </article>
-
         <div class="two columns">&nbsp;</div>
         <!--Empty Div-->
       </div>
+      <aside>
+        <div id="right-ad" class="ad">AD</div>
+      </aside>
     </div>
-  </section>
-
-  <aside>
-    <div id="right-ad" class="ad">AD</div>
-  </aside>
-
-  </div>`,
+  </section>`,
   aboutScreen: `<div id="about-page" class="hidden">
   <section class="row page-description">
       <h2>About Us</h2>
@@ -95,7 +58,7 @@ let screenStates = {
   gameScreen: `<div id="game-page" class="hidden">
   <div id="game-container">
     <iframe
-      src="https://preview.construct.net/#iq4jgdm2"
+      src="https://preview.construct.net/#9a4sm9br"
       width="600"
       height="400"
       scrolling="no"
