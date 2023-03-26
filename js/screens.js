@@ -33,7 +33,7 @@ let screenStates = {
 
         <article class="four columns game-card">
           <h3>Pong</h3>
-          <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
+          <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
           <button id="pong-game" class="game-page-button">Play now!</button>
         </article>
 

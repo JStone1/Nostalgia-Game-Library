@@ -2,7 +2,7 @@ let mainHTML = document.querySelector("main"); // where HTML screens get injecte
 
 let gameLinks = {
   drawing: " https://preview.construct.net/#hfez28d4 ",
-  pong: "https://preview.construct.net/#xq63eini",
+  pong: "https://preview.construct.net/#f7sjntxc",
 };
 
 // handlers for nav buttons
