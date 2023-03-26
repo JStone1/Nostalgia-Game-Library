@@ -1,5 +1,10 @@
 let mainHTML = document.querySelector("main"); // where HTML screens get injected
 
+let gameLinks = {
+  drawing: " https://preview.construct.net/#hfez28d4 ",
+  pong: "https://preview.construct.net/#xq63eini",
+};
+
 // handlers for nav buttons
 let homeScreenButton = document.getElementById("nav-home-screen");
 let libraryScreenButton = document.getElementById("nav-library-screen");
@@ -12,12 +17,24 @@ window.addEventListener("load", () => {
   mainHTML.insertAdjacentHTML("afterbegin", screenStates.aboutScreen);
   mainHTML.insertAdjacentHTML("afterbegin", screenStates.gameScreen);
 
+  let drawBtn = document.getElementById("draw-game");
+  drawBtn.addEventListener("click", () => {
+    gameIframe.src = gameLinks.drawing;
+    console.log("GAME 1", currentGame);
+  });
+
+  let pongBtn = document.getElementById("pong-game");
+  pongBtn.addEventListener("click", () => {
+    gameIframe.src = gameLinks.pong;
+    console.log("GAME 2", currentGame);
+  });
+
   // handlers for different screens/elements
   let homeScreen = document.getElementById("home-page");
   let libraryScreen = document.getElementById("library-page");
   let aboutScreen = document.getElementById("about-page");
   let gameScreen = document.getElementById("game-page");
-  let gameScreenButton = document.getElementById("game-page-button");
+  let gameScreenButtons = document.getElementsByClassName("game-page-button");
   let gameIframe = document.querySelector("iframe");
   let gameContainer = document.getElementById("game-container");
 
@@ -38,6 +55,7 @@ window.addEventListener("load", () => {
     homeScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
     gameContainer.removeChild(gameIframe);
+    console.log(currentGame);
   });
 
   aboutScreenButton.addEventListener("click", () => {
@@ -48,11 +66,13 @@ window.addEventListener("load", () => {
     gameContainer.removeChild(gameIframe);
   });
 
-  gameScreenButton.addEventListener("click", () => {
-    gameScreen.classList.remove("hidden");
-    homeScreen.classList.add("hidden");
-    libraryScreen.classList.add("hidden");
-    aboutScreen.classList.add("hidden");
-    gameContainer.appendChild(gameIframe);
-  });
+  for (let i = 0; i < gameScreenButtons.length; i++) {
+    gameScreenButtons[i].addEventListener("click", () => {
+      gameScreen.classList.remove("hidden");
+      homeScreen.classList.add("hidden");
+      libraryScreen.classList.add("hidden");
+      aboutScreen.classList.add("hidden");
+      gameContainer.appendChild(gameIframe);
+    });
+  }
 });

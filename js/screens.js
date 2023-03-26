@@ -28,13 +28,13 @@ let screenStates = {
           <h3>Drawmagination</h3>
           <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
 
-          <button id="game-page-button">Play now!</button>
+          <button id="draw-game" class="game-page-button">Play now!</button>
         </article>
 
         <article class="four columns game-card">
           <h3>Pong</h3>
           <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
-          <button>Play now!</button>
+          <button id="pong-game" class="game-page-button">Play now!</button>
         </article>
 
         <div class="two columns">&nbsp;</div>
@@ -58,7 +58,7 @@ let screenStates = {
   gameScreen: `<div id="game-page" class="hidden">
   <div id="game-container">
     <iframe
-      src="https://preview.construct.net/#9a4sm9br"
+      src=""
       width="600"
       height="400"
       scrolling="no"

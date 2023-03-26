@@ -58,7 +58,8 @@ input[type="search"]:focus::placeholder {
   justify-content: space-around;
   height: 50vh; }
   .game-card h3 {
-    text-decoration: underline; }
+    text-decoration: underline;
+    margin: 0; }
   .game-card p {
     max-width: 300px; }
   .game-card button {
