@@ -1,8 +1,8 @@
 let mainHTML = document.querySelector("main"); // where HTML screens get injected
 
 let gameLinks = {
-  drawing: " https://preview.construct.net/#hfez28d4 ",
-  pong: "https://preview.construct.net/#f7sjntxc",
+  drawing: " https://preview.construct.net/#s5zwqdgf",
+  pong: "https://preview.construct.net/#6tpd3swx",
 };
 
 // handlers for nav buttons
@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
   let gameIframe = document.querySelector("iframe");
   let gameContainer = document.getElementById("game-container");
 
-  gameScreen.classList.remove("hidden"); // shows home page on load
+  homeScreen.classList.remove("hidden"); // shows home page on load
   gameIframe.src = gameLinks.drawing;
 
   // event listeners that hide and reveal different pages

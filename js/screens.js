@@ -2,7 +2,7 @@ let screenStates = {
   homeScreen: `<div id="home-page"  class="hidden">
   <section class="row page-description">
       <h2>Home Screen</h2>
-      <p>This is the first screen</p>
+      <p>More coming soon...</p>
     </section>
   </div>`,
   libraryScreen: `<div id="library-page"  class="hidden">
@@ -48,7 +48,7 @@ let screenStates = {
   aboutScreen: `<div id="about-page" class="hidden">
   <section class="row page-description">
       <h2>About Us</h2>
-      <p>This is the about screen</p>
+      <p>More coming soon...</p>
     </section>
   </div>`,
   gameScreen: ` <div id="game-page" class="hidden">
