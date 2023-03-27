@@ -14,9 +14,7 @@ let screenStates = {
     <input type="search" placeholder="&#x1F50E;" />
   </section>
 
-  <aside>
-    <div id="left-ad" class="ad">AD</div>
-  </aside>
+
 
   <section class="row">
     <div class="twelve columns game-container">
@@ -44,9 +42,7 @@ let screenStates = {
         <div class="two columns">&nbsp;</div>
         <!--Empty Div-->
       </div>
-      <aside>
-        <div id="right-ad" class="ad">AD</div>
-      </aside>
+
     </div>
   </section>`,
   aboutScreen: `<div id="about-page" class="hidden">
@@ -55,15 +51,26 @@ let screenStates = {
       <p>This is the about screen</p>
     </section>
   </div>`,
-  gameScreen: `<div id="game-page" class="hidden">
-  <div id="game-container">
-    <iframe
-      src=""
-      width="600"
-      height="400"
-      scrolling="no"
-      noresize="noresize"
-    ></iframe>
+  gameScreen: ` <div id="game-page" class="hidden">
+  <section class="row page-description">
+    <h2>Get ready to play!</h2>
+  </section>
+  <div class="row">
+    <div class="three columns video-placeholder">Player 1 video</div>
+    <div class="six columns" id="game-container">
+      <iframe
+        src=""
+        width="600"
+        height="400"
+        scrolling="no"
+        noresize="noresize"
+      ></iframe>
+    </div>
+    <div class="three columns video-placeholder">Player 2 video</div>
+  </div>
+  <div id="chat-box-container">
+    <label for="chat-box">Chat box</label>
+    <input id="chat-box" type="text" />
   </div>
 </div>`,
 };

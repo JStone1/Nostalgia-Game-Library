@@ -54,9 +54,10 @@ input[type="search"]:focus::placeholder {
   justify-content: center;
   align-items: center;
   border: 3px solid #222;
+  border-radius: 15px;
   min-height: fit-content;
   justify-content: space-around;
-  height: 50vh; }
+  height: 500px; }
   .game-card h3 {
     text-decoration: underline;
     margin: 0; }
@@ -69,7 +70,8 @@ input[type="search"]:focus::placeholder {
       font-size: 2.5rem; } }
 
 .game-thumbnail {
-  width: 70%; }
+  width: 70%;
+  height: 50%; }
 
 .ad {
   display: flex;
@@ -80,7 +82,7 @@ input[type="search"]:focus::placeholder {
   height: 80vh;
   width: 10%;
   position: fixed;
-  top: 17%; }
+  top: 19.5%; }
 
 #right-ad {
   right: 0; }
@@ -88,10 +90,28 @@ input[type="search"]:focus::placeholder {
 #left-ad {
   left: 0; }
 
+#chat-box {
+  width: 80%;
+  height: 200px; }
+
+#chat-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 #game-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.video-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 400px; }
 
 /*# sourceMappingURL=main-styles.css.map */

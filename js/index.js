@@ -38,7 +38,8 @@ window.addEventListener("load", () => {
   let gameIframe = document.querySelector("iframe");
   let gameContainer = document.getElementById("game-container");
 
-  libraryScreen.classList.remove("hidden"); // shows home page on load
+  gameScreen.classList.remove("hidden"); // shows home page on load
+  gameIframe.src = gameLinks.drawing;
 
   // event listeners that hide and reveal different pages
   homeScreenButton.addEventListener("click", () => {
