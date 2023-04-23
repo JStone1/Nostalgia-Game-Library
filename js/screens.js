@@ -1,12 +1,40 @@
 let screenStates = {
-  homeScreen: `<div id="home-page"  class="hidden">
-  <section class="row page-description">
-      <h2>Home Screen</h2>
-      <p>More coming soon...</p>
+  homeScreen: `<div id="home-page" class="hidden">
+  <section class="hero">
+    <section id="hero-text" class="row page-description">
+      <h1>Hello!</h1>
+      <p>Welcome to Nostalgia Game Library!</p>
     </section>
-  </div>`,
+  </section>
+  <section class="info-block">
+    <h2>What is it?</h2>
+    <p>
+      Nostalgia Game Library is home to a fun collection of games that you
+      can play with your friends and family! By bringing back old
+      classics, we aim to bring people closer together through playing
+      games no matter the distance.
+    </p>
+  </section>
+  <section class="info-block">
+    <h2>Who are we?</h2>
+    <p>
+      Nostalgia Game Library is home to a fun collection of games that you
+      can play with your friends and family! By bringing back old
+      classics, we aim to bring people closer together through playing
+      games no matter the distance.
+    </p>
+  </section>
+  <section class="info-block">
+    <h2>Ready to play?</h2>
+    <p>
+      Click the button below to have a look at what games we have to
+      offer.
+    </p>
+    <button>Browse games</button>
+  </section>
+</div>`,
   libraryScreen: `<div id="library-page"  class="hidden">
-  <section class="row page-description">
+  <section class=" page-description row">
     <h2>Game Library</h2>
     <p>
       Browse through our collection of games or search for one yourself!
