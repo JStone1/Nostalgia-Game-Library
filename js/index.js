@@ -37,6 +37,7 @@ window.addEventListener("load", () => {
   let gameScreenButtons = document.getElementsByClassName("game-page-button");
   let gameIframe = document.querySelector("iframe");
   let gameContainer = document.getElementById("game-container");
+  let browseButton = document.getElementById("browse-button");
 
   homeScreen.classList.remove("hidden"); // shows home page on load
   gameIframe.src = gameLinks.drawing;
@@ -46,6 +47,14 @@ window.addEventListener("load", () => {
     homeScreen.classList.remove("hidden");
     gameScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
+    aboutScreen.classList.add("hidden");
+    gameContainer.removeChild(gameIframe);
+  });
+
+  browseButton.addEventListener("click", () => {
+    libraryScreen.classList.remove("hidden");
+    gameScreen.classList.add("hidden");
+    homeScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
     gameContainer.removeChild(gameIframe);
   });

@@ -2,6 +2,12 @@
 @import "./variables.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:wght@400;700&display=swap");
+
+/* Sites for font reasoning: 
+https://www.marketing-partners.com/conversations2/vision-changes-typography-for-aging-audiences#:~:text=A%20few%20typefaces%20that%20meet,the%20web%2C%20for%20good%20reason.
+https://www.fontpair.co/pairings/eb-garamond-montserrat
+*/
+
 html,
 body {
   padding: 0;
@@ -48,7 +54,7 @@ nav {
   @include centerContent(column);
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 150px !important;
+  margin-top: 175px !important;
   p {
     font-size: 22px;
   }

@@ -10,27 +10,26 @@ let screenStates = {
     <h2>What is it?</h2>
     <p>
       Nostalgia Game Library is home to a fun collection of games that you
-      can play with your friends and family! By bringing back old
-      classics, we aim to bring people closer together through playing
-      games no matter the distance.
+      can play with your friends and family!
+      We hope by bringing back old classic games, we can bring people closer together through playing
+      games - no matter the distance!
     </p>
   </section>
   <section class="info-block">
     <h2>Who are we?</h2>
     <p>
-      Nostalgia Game Library is home to a fun collection of games that you
-      can play with your friends and family! By bringing back old
-      classics, we aim to bring people closer together through playing
-      games no matter the distance.
+    We are a group of third year students from Bath Spa University who all have a passion for games! 
+    We beleive that the simplest games can often be the most fun, especially when playing with friends 
+    and family. By working in partnership with AgeUK, we aim to share our love for games with everyone and 
+    help create some new (and hopefully fun) memories!
     </p>
   </section>
   <section class="info-block">
     <h2>Ready to play?</h2>
     <p>
-      Click the button below to have a look at what games we have to
-      offer.
+      When you're ready, click the button below to get started!
     </p>
-    <button>Browse games</button>
+    <button id="browse-button">Browse games</button>
   </section>
 </div>`,
   libraryScreen: `<div id="library-page"  class="hidden">
