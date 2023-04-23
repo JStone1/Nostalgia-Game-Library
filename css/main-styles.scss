@@ -48,19 +48,31 @@ input[type="search"] {
 
 .game-card {
   @include centerContent(column);
-  border: 1px solid $black;
-  border-radius: 10px;
+  border: 3px solid $black;
+  border-radius: 15px;
+  min-height: fit-content;
+  justify-content: space-around;
+  height: 500px;
+  h3 {
+    text-decoration: underline;
+    margin: 0;
+  }
   p {
     max-width: 300px;
   }
-  @include breakpoint(0px, 550px) {
-    margin-top: 25px;
+  button {
+    margin-top: 15px;
+  }
+  @include breakpoint(550px, 900px) {
+    h3 {
+      font-size: 2.5rem;
+    }
   }
 }
 
 .game-thumbnail {
-  width: 300px;
-  max-width: 100%;
+  width: 70%;
+  height: 50%;
 }
 
 .ad {
@@ -69,12 +81,7 @@ input[type="search"] {
   height: 80%;
   width: 10%;
   position: fixed;
-  top: 17%;
-  @include breakpoint(0px, 550px) {
-    height: 10vh;
-    width: 99%;
-    position: static;
-  }
+  top: 19.5%;
 }
 
 #ad1 {
@@ -97,6 +104,25 @@ input[type="search"] {
   @include centerContent(column);
 }
 
+// #game-page {
+//   @include centerContent(column);
+// }
+
+#chat-box {
+  width: 80%;
+  height: 200px;
+}
+
+#chat-box-container {
+  @include centerContent(column);
+}
+
 #game-container {
   @include centerContent(column);
+}
+
+.video-placeholder {
+  @include centerContent(column);
+  background-color: lightgray;
+  height: 400px;
 }
