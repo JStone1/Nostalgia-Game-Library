@@ -36,9 +36,8 @@ let screenStates = {
   <section class=" page-description row">
     <h2>Game Library</h2>
     <p>
-      Browse through our collection of games or search for one yourself!
+      Browse through our collection of games:
     </p>
-    <input type="search" placeholder="&#x1F50E;" />
   </section>
 
 
@@ -57,6 +56,32 @@ let screenStates = {
         </article>
 
         <article class="four columns game-card">
+          <h3>Pong</h3>
+          <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
+          <button id="pong-game" class="game-page-button">Play now!</button>
+        </article>
+
+        <div class="two columns">&nbsp;</div>
+        <!--Empty Div-->
+      </div>
+
+        <div class="two columns">&nbsp;</div>
+        <!--Empty Div-->
+      </div>      
+      <div class="row">
+        <div class="two columns">&nbsp;</div>
+        <!--Empty Div-->
+
+        <article class="four columns game-card">
+          <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
+          <h3>Drawmagination</h3>
+          <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
+
+          <button id="draw-game" class="game-page-button">Play now!</button>
+        </article>
+
+        <article class="four columns game-card">
+          <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
           <h3>Pong</h3>
           <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
           <button id="pong-game" class="game-page-button">Play now!</button>

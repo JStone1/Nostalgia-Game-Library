@@ -49,6 +49,7 @@ header {
   position: fixed;
   top: 0;
   font-family: "EB Garamond", serif;
+  z-index: 3;
 }
 
 nav {
@@ -127,12 +128,13 @@ input[type="search"] {
   }
 }
 
-.overlay {
+.locked {
+  @include centerContent(column);
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: grey;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 15px;
   z-index: 2;
 }
