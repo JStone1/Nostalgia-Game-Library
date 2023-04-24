@@ -2,7 +2,7 @@ let screenStates = {
   homeScreen: `<div id="home-page" class="hidden">
   <section class="hero">
     <section id="hero-text" class="row page-description">
-      <h1>Hello!</h1>
+      <h1>HELLO!</h1>
       <p>Welcome to Nostalgia Game Library!</p>
     </section>
   </section>

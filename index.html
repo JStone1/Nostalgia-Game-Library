@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nostalgia Game Library</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/skeleton.css" />
-    <link href="/css/main-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link href="css/main-styles.css" rel="stylesheet" />
+    <script
+    src="https://kit.fontawesome.com/c7ab0cffa1.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
     <header>
@@ -19,7 +23,31 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main><div class="row">
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
+
+      <article class="four columns game-card">
+        <div class="overlay"><i class="fa-light fa-lock" style="color: #162237;"></i></div>
+        <h3>Drawmagination</h3>
+        <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
+
+        <button id="draw-game" class="game-page-button">Play now!</button>
+      </article>
+
+      <article class="four columns game-card">
+        <h3>Pong</h3>
+        <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
+        <button id="pong-game" class="game-page-button">Play now!</button>
+      </article>
+
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
+    </div>
+
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
+    </div></main>
   </body>
   <script defer src="js/index.js"></script>
   <script defer src="js/screens.js"></script>

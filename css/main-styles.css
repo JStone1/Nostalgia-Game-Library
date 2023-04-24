@@ -6,28 +6,27 @@ https://www.fontpair.co/pairings/eb-garamond-montserrat
 html,
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 body {
   background-color: #ddd;
   min-height: 100vh;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 h1,
 h2,
-h3 {
-  font-family: "EB Garamond", serif;
-}
+h3,
+button {
+  font-family: "EB Garamond", serif; }
 
 p {
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: "Montserrat", sans-serif; }
+
+.row {
+  margin: 20px 0px; }
 
 header {
   display: flex;
@@ -41,12 +40,10 @@ header {
   padding-top: 10px;
   position: fixed;
   top: 0;
-  font-family: "EB Garamond", serif;
-}
+  font-family: "EB Garamond", serif; }
 
 nav {
-  font-size: 24px;
-}
+  font-size: 24px; }
 
 .page-description {
   display: flex;
@@ -55,11 +52,9 @@ nav {
   align-items: center;
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 175px !important;
-}
-.page-description p {
-  font-size: 22px;
-}
+  margin-top: 175px !important; }
+  .page-description p {
+    font-size: 22px; }
 
 .hero {
   display: flex;
@@ -67,19 +62,18 @@ nav {
   justify-content: center;
   align-items: center;
   background-image: url(/images/feelfarbig-magazine-0nCFpNXJsA0-unsplash.jpg);
+  background-blend-mode: soft-light;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #666;
   height: 100vh;
-  margin: 0;
-}
+  margin: 0; }
 
 #hero-text {
-  background-color: #a8a8a8;
+  color: #ddd;
   padding: 30px;
-  border-radius: 3%;
-}
+  border-radius: 3%; }
 
 .info-block {
   display: flex;
@@ -87,30 +81,24 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  margin: 50px 0px;
-}
-.info-block p {
-  max-width: 50%;
-}
+  margin: 50px 0px; }
+  .info-block p {
+    max-width: 50%; }
 
 input[type="search"]:focus::placeholder {
-  color: transparent;
-}
+  color: transparent; }
 
 .horizontal-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  list-style: none;
-}
-.horizontal-list li {
-  margin: 0px 15px;
-  cursor: pointer;
-}
-.horizontal-list li:hover {
-  text-decoration: underline;
-}
+  list-style: none; }
+  .horizontal-list li {
+    margin: 0px 15px;
+    cursor: pointer; }
+    .horizontal-list li:hover {
+      text-decoration: underline; }
 
 .game-card {
   display: flex;
@@ -122,27 +110,30 @@ input[type="search"]:focus::placeholder {
   min-height: fit-content;
   justify-content: space-around;
   height: 500px;
-}
-.game-card h3 {
-  text-decoration: underline;
-  margin: 0;
-}
-.game-card p {
-  max-width: 300px;
-}
-.game-card button {
-  margin-top: 15px;
-}
-@media screen and (min-width: 550px) and (max-width: 900px) {
+  position: relative; }
   .game-card h3 {
-    font-size: 2.5rem;
-  }
-}
+    text-decoration: underline;
+    margin: 0; }
+  .game-card p {
+    max-width: 300px; }
+  .game-card button {
+    margin-top: 15px; }
+  @media screen and (min-width: 550px) and (max-width: 900px) {
+    .game-card h3 {
+      font-size: 2.5rem; } }
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.7;
+  border-radius: 15px;
+  z-index: 2; }
 
 .game-thumbnail {
   width: 70%;
-  height: 50%;
-}
+  height: 50%; }
 
 .ad {
   display: flex;
@@ -150,57 +141,46 @@ input[type="search"]:focus::placeholder {
   justify-content: center;
   align-items: center;
   border: #111 solid 2px;
-  height: 80vh;
+  height: 80%;
   width: 10%;
   position: fixed;
-  top: 19.5%;
-}
+  top: 19.5%; }
 
 #ad1 {
-  right: 0;
-}
-@media screen and (min-width: 0px) and (max-width: 550px) {
-  #ad1 {
-    top: 25%;
-    left: 0;
-  }
-}
+  right: 0; }
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    #ad1 {
+      top: 25%;
+      left: 0; } }
 
 #ad2 {
-  left: 0;
-}
-@media screen and (min-width: 0px) and (max-width: 550px) {
-  #ad2 {
-    top: 25%;
-    left: 0;
-  }
-}
+  left: 0; }
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    #ad2 {
+      top: 25%;
+      left: 0; } }
 
 #game-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 #chat-box {
   width: 80%;
-  height: 200px;
-}
+  height: 200px; }
 
 #chat-box-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 #game-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .video-placeholder {
   display: flex;
@@ -208,7 +188,6 @@ input[type="search"]:focus::placeholder {
   justify-content: center;
   align-items: center;
   background-color: lightgray;
-  height: 400px;
-}
+  height: 400px; }
 
 /*# sourceMappingURL=main-styles.css.map */
