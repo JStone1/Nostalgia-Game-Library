@@ -48,6 +48,7 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
+    window.scrollTo(0, 0);
     gameContainer.removeChild(gameIframe);
   });
 
@@ -56,6 +57,7 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     homeScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
+    window.scrollTo(0, 0);
     gameContainer.removeChild(gameIframe);
   });
 
@@ -65,6 +67,7 @@ window.addEventListener("load", () => {
     homeScreen.classList.add("hidden");
     aboutScreen.classList.add("hidden");
     gameContainer.removeChild(gameIframe);
+    window.scrollTo(0, 0);
     console.log(currentGame);
   });
 
@@ -73,6 +76,7 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     homeScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
+    window.scrollTo(0, 0);
     gameContainer.removeChild(gameIframe);
   });
 
@@ -82,6 +86,7 @@ window.addEventListener("load", () => {
       homeScreen.classList.add("hidden");
       libraryScreen.classList.add("hidden");
       aboutScreen.classList.add("hidden");
+      window.scrollTo(0, 0);
       gameContainer.appendChild(gameIframe);
     });
   }
