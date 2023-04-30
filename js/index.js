@@ -91,6 +91,7 @@ window.addEventListener("load", () => {
     });
   }
 
+  // code for login form //
   let loginUsername = document.getElementById("login-username");
   let loginPassword = document.getElementById("login-password");
   let submitBTN = document.getElementById("submit-button");
@@ -104,9 +105,22 @@ window.addEventListener("load", () => {
   loginUsername.addEventListener("input", checkText);
   loginPassword.addEventListener("input", checkText);
 
+  loginUsername.addEventListener("click", () => {
+    loginUsername.style.removeProperty("border");
+  });
+
+  loginPassword.addEventListener("click", () => {
+    loginPassword.style.removeProperty("border");
+  });
+
   submitBTN.addEventListener("click", () => {
     if (currentText == "") {
       console.log("Please enter some words");
+      loginUsername.style.border = "1px solid red";
+      loginPassword.style.border = "1px solid red";
+    } else {
+      loginScreen.classList.add("hidden");
+      libraryScreen.classList.remove("hidden");
     }
   });
 });
