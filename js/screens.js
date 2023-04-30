@@ -29,7 +29,7 @@ let screenStates = {
     <p>
       When you're ready, click the button below to get started!
     </p>
-    <button id="browse-button">Browse games</button>
+    <button class="button-primary" id="browse-button">Browse games</button>
   </section>
 </div>`,
   libraryScreen: `<div id="library-page"  class="hidden">
@@ -52,13 +52,13 @@ let screenStates = {
           <h3>Drawmagination</h3>
           <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
 
-          <button id="draw-game" class="game-page-button">Play now!</button>
+          <button id="draw-game" class=" button-primary game-page-button">Play now!</button>
         </article>
 
         <article class="four columns game-card">
           <h3>Pong</h3>
           <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
-          <button id="pong-game" class="game-page-button">Play now!</button>
+          <button id="pong-game" class=" button-primary game-page-button">Play now!</button>
         </article>
 
         <div class="two columns">&nbsp;</div>
@@ -97,12 +97,6 @@ let screenStates = {
 
     </div>
   </section>`,
-  aboutScreen: `<div id="about-page" class="hidden">
-  <section class="row page-description">
-      <h2>About Us</h2>
-      <p>More coming soon...</p>
-    </section>
-  </div>`,
   gameScreen: ` <div id="game-page" class="hidden">
   <section class="row page-description">
     <h2>Get ready to play!</h2>
@@ -124,5 +118,22 @@ let screenStates = {
     <label for="chat-box">Chat box</label>
     <input id="chat-box" type="text" />
   </div>
+</div>`,
+  loginScreen: ` <div id="login-page"> 
+    <section class="row page-description">
+    <h2>Login</h2>
+    <p>
+    Please enter your details below
+  </p>
+    </section>
+    <section class="row">    
+    <form id="login-form">
+      <label for="login-username">Username</label>
+      <input type="text" id="login-username" name="username" />
+      <label for="login-password">Password</label>
+      <input type="text" id="login-password" name="password" />
+      <button class="button-primary" type="button" id="submit-button">Login</button>
+      </form>
+      </section>
 </div>`,
 };
