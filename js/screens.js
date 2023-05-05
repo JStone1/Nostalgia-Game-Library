@@ -2,8 +2,8 @@ let screenStates = {
   homeScreen: `<div id="home-page" class="hidden">
   <section class="hero">
     <section id="hero-text" class="row page-description">
-      <h1>HELLO!</h1>
-      <p>Welcome to Nostalgia Game Library!</p>
+      <h1>Welcome to...</h1>
+      <p>Nostalgia Game Library!</p>
     </section>
   </section>
   <section class="info-block">
@@ -51,13 +51,14 @@ let screenStates = {
         <article class="four columns game-card">
           <h3>Drawmagination</h3>
           <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
-
+          <p>Take turns to draw whilst the other player guesses!</p>
           <button id="draw-game" class=" button-primary game-page-button">Play now!</button>
         </article>
 
         <article class="four columns game-card">
           <h3>Pong</h3>
           <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
+          <p> Take control of a paddle and hit the ball past the other player to score a point!</p>
           <button id="pong-game" class=" button-primary game-page-button">Play now!</button>
         </article>
 
@@ -119,7 +120,7 @@ let screenStates = {
     <input id="chat-box" type="text" />
   </div>
 </div>`,
-  loginScreen: ` <div id="login-page"> 
+  loginScreen: ` <div id="login-page" class="hidden"> 
     <section class="row page-description">
     <h2>Login</h2>
     <p>

@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
   let gameContainer = document.getElementById("game-container");
   let browseButton = document.getElementById("browse-button");
 
-  loginScreen.classList.remove("hidden"); // shows home page on load
+  homeScreen.classList.remove("hidden"); // shows home page on load
   gameIframe.src = gameLinks.drawing;
 
   // event listeners that hide and reveal different pages
