@@ -22,6 +22,10 @@ h3,
 button {
   font-family: "EB Garamond", serif; }
 
+h2 {
+  color: #b0a143;
+  font-weight: bold; }
+
 p {
   font-family: "Montserrat", sans-serif; }
 
@@ -30,22 +34,47 @@ p {
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
   color: #ddd;
-  background-color: #111;
+  background-color: #2e2a29;
   width: 100%;
   text-align: center;
   padding-top: 10px;
   position: fixed;
   top: 0;
   font-family: "EB Garamond", serif;
-  z-index: 3; }
+  z-index: 3;
+  padding: 20px 0px; }
+  header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    header div h1 {
+      margin: 0px 0px 0px 30px; }
 
+.logo {
+  width: 150px;
+  border-radius: 50%;
+  transition: 0.7s;
+  margin-left: 20px; }
+
+.small-logo {
+  width: 70px; }
+
+nav ul {
+  margin: 0px 20px 0px 0px;
+  padding: 60px 0px;
+  transition: 0.7s; }
 nav li {
   font-size: 32px;
-  color: #4c69c9; }
+  color: #b0a143; }
+
+.small-ul {
+  padding: 15px 0px; }
 
 .page-description {
   display: flex;
@@ -107,7 +136,7 @@ input[type="search"]:focus::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid #111;
+  border: 3px solid #2e2a29;
   border-radius: 15px;
   min-height: fit-content;
   justify-content: space-around;
@@ -148,7 +177,7 @@ input[type="search"]:focus::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: #111 solid 2px;
+  border: #2e2a29 solid 2px;
   height: 80%;
   width: 10%;
   position: fixed;

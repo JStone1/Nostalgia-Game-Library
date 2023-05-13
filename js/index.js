@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
   let gameScreen = document.getElementById("game-page");
   let loginScreen = document.getElementById("login-page");
   let gameScreenButtons = document.getElementsByClassName("game-page-button");
-  let gameIframe = document.querySelector("iframe");
+  let gameIframe = document.getElementById("game-iframe");
   let gameContainer = document.getElementById("game-container");
   let browseButton = document.getElementById("browse-button");
 
@@ -49,7 +49,11 @@ window.addEventListener("load", () => {
     libraryScreen.classList.add("hidden");
     loginScreen.classList.add("hidden");
     window.scrollTo(0, 0);
-    gameContainer.removeChild(gameIframe);
+    if (gameContainer.contains(gameIframe)) {
+      gameContainer.removeChild(gameIframe);
+    }
+    document.querySelector("ul").classList.remove("small-ul");
+    document.getElementsByClassName("logo")[0].classList.remove("small-logo");
   });
 
   browseButton.addEventListener("click", () => {
@@ -58,7 +62,10 @@ window.addEventListener("load", () => {
     homeScreen.classList.add("hidden");
     loginScreen.classList.add("hidden");
     window.scrollTo(0, 0);
-    gameContainer.removeChild(gameIframe);
+    if (gameContainer.contains(gameIframe)) {
+      gameContainer.removeChild(gameIframe);
+    }
+    checkHeaderStyling();
   });
 
   libraryScreenButton.addEventListener("click", () => {
@@ -66,9 +73,11 @@ window.addEventListener("load", () => {
     gameScreen.classList.add("hidden");
     homeScreen.classList.add("hidden");
     loginScreen.classList.add("hidden");
-    gameContainer.removeChild(gameIframe);
+    if (gameContainer.contains(gameIframe)) {
+      gameContainer.removeChild(gameIframe);
+    }
     window.scrollTo(0, 0);
-    console.log(currentGame);
+    checkHeaderStyling();
   });
 
   loginScreenButton.addEventListener("click", () => {
@@ -77,7 +86,10 @@ window.addEventListener("load", () => {
     homeScreen.classList.add("hidden");
     libraryScreen.classList.add("hidden");
     window.scrollTo(0, 0);
-    gameContainer.removeChild(gameIframe);
+    if (gameContainer.contains(gameIframe)) {
+      gameContainer.removeChild(gameIframe);
+    }
+    checkHeaderStyling();
   });
 
   for (let i = 0; i < gameScreenButtons.length; i++) {
@@ -86,9 +98,11 @@ window.addEventListener("load", () => {
       homeScreen.classList.add("hidden");
       libraryScreen.classList.add("hidden");
       loginScreen.classList.add("hidden");
+      checkHeaderStyling();
       window.scrollTo(0, 0);
       gameContainer.appendChild(gameIframe);
     });
+    console.log(homeScreen.classList);
   }
 
   // code for login form //
@@ -123,4 +137,32 @@ window.addEventListener("load", () => {
       libraryScreen.classList.remove("hidden");
     }
   });
+
+  window.addEventListener("scroll", () => {
+    if (!homeScreen.classList.contains("hidden")) {
+      console.log("Home screen hidden");
+      scrollFunction();
+    }
+  });
 });
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    document.querySelector("ul").classList.add("small-ul");
+
+    document.getElementsByClassName("logo")[0].classList.add("small-logo");
+  } else {
+    document.querySelector("ul").classList.remove("small-ul");
+    document.getElementsByClassName("logo")[0].classList.remove("small-logo");
+  }
+}
+
+function checkHeaderStyling() {
+  if (!document.querySelector("ul").classList.contains("small-ul")) {
+    document.querySelector("ul").classList.add("small-ul");
+    document.getElementsByClassName("logo")[0].classList.add("small-logo");
+  }
+}

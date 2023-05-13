@@ -31,6 +31,11 @@ button {
   font-family: "EB Garamond", serif;
 }
 
+h2 {
+  color: $gold;
+  font-weight: bold;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
 }
@@ -40,7 +45,8 @@ p {
 }
 
 header {
-  @include centerContent(column);
+  @include centerContent(row);
+  justify-content: space-between;
   color: $white;
   background-color: $black;
   width: 100%;
@@ -50,13 +56,40 @@ header {
   top: 0;
   font-family: "EB Garamond", serif;
   z-index: 3;
+  padding: 20px 0px;
+  div {
+    @include centerContent(row);
+    h1 {
+      margin: 0px 0px 0px 30px;
+    }
+  }
+}
+
+.logo {
+  width: 150px;
+  border-radius: 50%;
+  transition: 0.7s;
+  margin-left: 20px;
+}
+
+.small-logo {
+  width: 70px;
 }
 
 nav {
+  ul {
+    margin: 0px 20px 0px 0px;
+    padding: 60px 0px;
+    transition: 0.7s;
+  }
   li {
     font-size: 32px;
-    color: #4c69c9;
+    color: $gold;
   }
+}
+
+.small-ul {
+  padding: 15px 0px;
 }
 
 .page-description {

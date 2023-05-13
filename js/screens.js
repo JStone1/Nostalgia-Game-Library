@@ -111,6 +111,7 @@ let screenStates = {
         height="400"
         scrolling="no"
         noresize="noresize"
+        id="game-iframe"
       ></iframe>
     </div>
     <div class="three columns video-placeholder">Player 2 video</div>
