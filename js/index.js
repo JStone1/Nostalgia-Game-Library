@@ -105,6 +105,8 @@ window.addEventListener("load", () => {
     console.log(homeScreen.classList);
   }
 
+  let avatar = document.getElementById("avatar");
+
   // code for login form //
   let loginUsername = document.getElementById("login-username");
   let loginPassword = document.getElementById("login-password");
@@ -136,7 +138,7 @@ window.addEventListener("load", () => {
       // user successful log in
       loginScreen.classList.add("hidden");
       libraryScreen.classList.remove("hidden");
-      document.getElementById("avatar").classList.remove("hidden");
+      avatar.classList.remove("hidden");
       document.getElementById("nav-login-screen").classList.add("hidden");
     }
   });
@@ -156,11 +158,12 @@ function scrollFunction() {
     document.documentElement.scrollTop > 300
   ) {
     document.querySelector("ul").classList.add("small-ul");
-
     document.getElementsByClassName("logo")[0].classList.add("small-logo");
+    document.querySelectorAll("h1")[0].classList.remove("hidden");
   } else {
     document.querySelector("ul").classList.remove("small-ul");
     document.getElementsByClassName("logo")[0].classList.remove("small-logo");
+    document.querySelectorAll("h1")[0].classList.add("hidden");
   }
 }
 
@@ -168,5 +171,6 @@ function checkHeaderStyling() {
   if (!document.querySelector("ul").classList.contains("small-ul")) {
     document.querySelector("ul").classList.add("small-ul");
     document.getElementsByClassName("logo")[0].classList.add("small-logo");
+    document.querySelectorAll("h1")[0].classList.add("hidden");
   }
 }

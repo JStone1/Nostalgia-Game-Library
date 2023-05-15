@@ -29,6 +29,7 @@ h2,
 h3,
 button {
   font-family: "EB Garamond", serif;
+  transition: 0.7s;
 }
 
 h2 {
@@ -57,6 +58,7 @@ header {
   font-family: "EB Garamond", serif;
   z-index: 3;
   padding: 20px 0px;
+  transition: 0.7s;
   div {
     @include centerContent(row);
     h1 {
@@ -125,6 +127,10 @@ nav {
   color: $white;
   padding: 30px;
   border-radius: 3%;
+  h1,
+  p {
+    font-size: 3.5em;
+  }
 }
 
 .info-block {

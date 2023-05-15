@@ -20,7 +20,8 @@ h1,
 h2,
 h3,
 button {
-  font-family: "EB Garamond", serif; }
+  font-family: "EB Garamond", serif;
+  transition: 0.7s; }
 
 h2 {
   color: #b0a143;
@@ -47,7 +48,8 @@ header {
   top: 0;
   font-family: "EB Garamond", serif;
   z-index: 3;
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  transition: 0.7s; }
   header div {
     display: flex;
     flex-direction: row;
@@ -111,6 +113,9 @@ nav li {
   color: #ddd;
   padding: 30px;
   border-radius: 3%; }
+  #hero-text h1,
+  #hero-text p {
+    font-size: 3.5em; }
 
 .info-block {
   display: flex;

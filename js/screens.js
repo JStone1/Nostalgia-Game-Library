@@ -133,7 +133,7 @@ let screenStates = {
       <label for="login-username">Username</label>
       <input type="text" id="login-username" name="username" />
       <label for="login-password">Password</label>
-      <input type="text" id="login-password" name="password" />
+      <input type="password" id="login-password" name="password" />
       <button class="button-primary" type="button" id="submit-button">Login</button>
       </form>
       </section>
