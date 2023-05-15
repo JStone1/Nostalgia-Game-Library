@@ -50,14 +50,14 @@ let screenStates = {
 
         <article class="four columns game-card">
           <h3>Drawmagination</h3>
-          <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
+          <img class="game-thumbnail" src="images/draw-thumbnail.png" />
           <p>Take turns to draw whilst the other player guesses!</p>
           <button id="draw-game" class=" button-primary game-page-button">Play now!</button>
         </article>
 
         <article class="four columns game-card">
           <h3>Pong</h3>
-          <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
+          <img class="game-thumbnail" src="images/pong-thumbnail.png" />
           <p> Take control of a paddle and hit the ball past the other player to score a point!</p>
           <button id="pong-game" class=" button-primary game-page-button">Play now!</button>
         </article>
@@ -76,7 +76,7 @@ let screenStates = {
         <article class="four columns game-card">
           <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
           <h3>Drawmagination</h3>
-          <img class="game-thumbnail" src="/images/draw-thumbnail.png" />
+          <img class="game-thumbnail" src="images/draw-thumbnail.png" />
 
           <button id="draw-game" class="game-page-button">Play now!</button>
         </article>
@@ -84,7 +84,7 @@ let screenStates = {
         <article class="four columns game-card">
           <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
           <h3>Pong</h3>
-          <img class="game-thumbnail" src="/images/pong-thumbnail.png" />
+          <img class="game-thumbnail" src="images/pong-thumbnail.png" />
           <button id="pong-game" class="game-page-button">Play now!</button>
         </article>
 
