@@ -113,7 +113,7 @@ nav {
 
 .hero {
   @include centerContent(row);
-  background-image: url(images/hero-img.jpg);
+  background-image: url("images/hero-img.jpg");
   background-blend-mode: soft-light;
   background-size: cover; // makes image cover the whole container
   background-repeat: no-repeat;
