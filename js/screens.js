@@ -3,7 +3,7 @@ let screenStates = {
   <section class="hero">
     <section id="hero-text" class="row page-description">
       <h1>Welcome to...</h1>
-      <p>Nostalgia Game Library!</p>
+      <p>Nostalgic Game Library!</p>
     </section>
   </section>
   <section class="info-block">

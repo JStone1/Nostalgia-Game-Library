@@ -129,15 +129,19 @@ window.addEventListener("load", () => {
 
   submitBTN.addEventListener("click", () => {
     if (currentText == "") {
-      console.log("Please enter some words");
+      // user hasn't enetered words
       loginUsername.style.border = "1px solid red";
       loginPassword.style.border = "1px solid red";
     } else {
+      // user successful log in
       loginScreen.classList.add("hidden");
       libraryScreen.classList.remove("hidden");
+      document.getElementById("avatar").classList.remove("hidden");
+      document.getElementById("nav-login-screen").classList.add("hidden");
     }
   });
 
+  // code for changing header on scroll
   window.addEventListener("scroll", () => {
     if (!homeScreen.classList.contains("hidden")) {
       console.log("Home screen hidden");
