@@ -2,14 +2,14 @@ let screenStates = {
   homeScreen: `<div id="home-page" class="hidden">
   <section class="hero">
     <section id="hero-text" class="row page-description">
-      <h1>Welcome to...</h1>
-      <p>Nostalgic Game Library!</p>
+      <h1>Nostalgic Games Library</h1>
+      <p>Bridging the gap between generations</p>
     </section>
   </section>
   <section class="info-block">
     <h2>What is it?</h2>
     <p>
-      Nostalgia Game Library is home to a fun collection of games that you
+      Nostalgic Games Library is home to a fun collection of games that you
       can play with your friends and family!
       We hope by bringing back old classic games, we can bring people closer together through playing
       games - no matter the distance!
@@ -107,18 +107,14 @@ let screenStates = {
     <div class="six columns" id="game-container">
       <iframe
         src=""
-        width="600"
-        height="400"
+        width="800"
+        height="600"
         scrolling="no"
         noresize="noresize"
         id="game-iframe"
       ></iframe>
     </div>
     <div class="three columns video-placeholder">Player 2 video</div>
-  </div>
-  <div id="chat-box-container">
-    <label for="chat-box">Chat box</label>
-    <input id="chat-box" type="text" />
   </div>
 </div>`,
   loginScreen: ` <div id="login-page" class="hidden"> 

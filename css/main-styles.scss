@@ -20,7 +20,6 @@ body {
 
 body {
   background-color: $white;
-  min-height: 100vh;
   max-width: 100%;
 }
 
@@ -75,14 +74,14 @@ header {
 }
 
 .logo {
-  width: 150px;
-  border-radius: 50%;
+  width: 350px;
+  border-radius: 60px;
   transition: 0.7s;
   margin-left: 20px;
 }
 
 .small-logo {
-  width: 70px;
+  width: 200px;
 }
 
 nav {
@@ -127,9 +126,12 @@ nav {
   color: $white;
   padding: 30px;
   border-radius: 3%;
-  h1,
+  h1 {
+    font-size: 5em;
+  }
   p {
-    font-size: 3.5em;
+    font-size: 1.5em;
+    font-style: italic;
   }
 }
 

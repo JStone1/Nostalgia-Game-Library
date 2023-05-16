@@ -13,7 +13,6 @@ body {
 
 body {
   background-color: #ddd;
-  min-height: 100vh;
   max-width: 100%; }
 
 h1,
@@ -65,13 +64,13 @@ header {
   margin-left: 20px; }
 
 .logo {
-  width: 150px;
-  border-radius: 50%;
+  width: 350px;
+  border-radius: 60px;
   transition: 0.7s;
   margin-left: 20px; }
 
 .small-logo {
-  width: 70px; }
+  width: 200px; }
 
 nav ul {
   margin: 0px 20px 0px 0px;
@@ -113,9 +112,11 @@ nav li {
   color: #ddd;
   padding: 30px;
   border-radius: 3%; }
-  #hero-text h1,
+  #hero-text h1 {
+    font-size: 5em; }
   #hero-text p {
-    font-size: 3.5em; }
+    font-size: 1.5em;
+    font-style: italic; }
 
 .info-block {
   display: flex;

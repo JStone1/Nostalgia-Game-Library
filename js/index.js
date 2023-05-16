@@ -2,7 +2,7 @@ let mainHTML = document.querySelector("main"); // where HTML screens get injecte
 
 let gameLinks = {
   drawing: " https://preview.construct.net/#s5zwqdgf",
-  pong: "https://preview.construct.net/#6tpd3swx",
+  pong: "https://stunning-crisp-45a8bb.netlify.app",
 };
 
 // handlers for nav buttons
@@ -159,11 +159,9 @@ function scrollFunction() {
   ) {
     document.querySelector("ul").classList.add("small-ul");
     document.getElementsByClassName("logo")[0].classList.add("small-logo");
-    document.querySelectorAll("h1")[0].classList.remove("hidden");
   } else {
     document.querySelector("ul").classList.remove("small-ul");
     document.getElementsByClassName("logo")[0].classList.remove("small-logo");
-    document.querySelectorAll("h1")[0].classList.add("hidden");
   }
 }
 
@@ -171,6 +169,5 @@ function checkHeaderStyling() {
   if (!document.querySelector("ul").classList.contains("small-ul")) {
     document.querySelector("ul").classList.add("small-ul");
     document.getElementsByClassName("logo")[0].classList.add("small-logo");
-    document.querySelectorAll("h1")[0].classList.add("hidden");
   }
 }
