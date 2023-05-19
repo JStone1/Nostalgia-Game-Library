@@ -98,23 +98,19 @@ let screenStates = {
 
     </div>
   </section>`,
-  gameScreen: ` <div id="game-page" class="hidden">
+  gameScreen: `       <div id="game-page" class="hidden">
   <section class="row page-description">
     <h2>Get ready to play!</h2>
   </section>
-  <div class="row">
-    <div class="three columns video-placeholder">Player 1 video</div>
-    <div class="six columns" id="game-container">
+  <div id="play-container">
+    <div id="game-container">
       <iframe
         src=""
-        width="800"
-        height="600"
         scrolling="no"
         noresize="noresize"
         id="game-iframe"
       ></iframe>
     </div>
-    <div class="three columns video-placeholder">Player 2 video</div>
   </div>
 </div>`,
   loginScreen: ` <div id="login-page" class="hidden"> 

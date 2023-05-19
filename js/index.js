@@ -101,6 +101,9 @@ window.addEventListener("load", () => {
       checkHeaderStyling();
       window.scrollTo(0, 0);
       gameContainer.appendChild(gameIframe);
+      let videoFeed = document.getElementById("videos");
+      document.getElementById("play-container").appendChild(videoFeed);
+      videoFeed.classList.remove("hidden");
     });
     console.log(homeScreen.classList);
   }
