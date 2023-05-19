@@ -32,15 +32,11 @@ let screenStates = {
     <button class="button-primary" id="browse-button">Browse games</button>
   </section>
 </div>`,
-  libraryScreen: `<div id="library-page"  class="hidden">
-  <section class=" page-description row">
+  libraryScreen: ` <div id="library-page" class="hidden">
+  <section class="page-description row">
     <h2>Game Library</h2>
-    <p>
-      Browse through our collection of games:
-    </p>
+    <p>Browse through our collection of games:</p>
   </section>
-
-
 
   <section class="row">
     <div class="twelve columns game-container">
@@ -52,52 +48,86 @@ let screenStates = {
           <h3>Drawmagination</h3>
           <img class="game-thumbnail" src="images/draw-thumbnail.png" />
           <p>Take turns to draw whilst the other player guesses!</p>
-          <button id="draw-game" class=" button-primary game-page-button">Play now!</button>
+          <button id="draw-game" class="button-primary game-page-button">
+            Play now!
+          </button>
         </article>
 
         <article class="four columns game-card">
           <h3>Pong</h3>
           <img class="game-thumbnail" src="images/pong-thumbnail.png" />
-          <p> Take control of a paddle and hit the ball past the other player to score a point!</p>
-          <button id="pong-game" class=" button-primary game-page-button">Play now!</button>
+          <p>
+            Take control of a paddle and hit the ball past the other
+            player to score a point!
+          </p>
+          <button id="pong-game" class="button-primary game-page-button">
+            Play now!
+          </button>
         </article>
 
         <div class="two columns">&nbsp;</div>
         <!--Empty Div-->
       </div>
 
-        <div class="two columns">&nbsp;</div>
-        <!--Empty Div-->
-      </div>      
-      <div class="row">
-        <div class="two columns">&nbsp;</div>
-        <!--Empty Div-->
-
-        <article class="four columns game-card">
-          <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
-          <h3>Drawmagination</h3>
-          <img class="game-thumbnail" src="images/draw-thumbnail.png" />
-
-          <button id="draw-game" class="game-page-button">Play now!</button>
-        </article>
-
-        <article class="four columns game-card">
-          <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
-          <h3>Pong</h3>
-          <img class="game-thumbnail" src="images/pong-thumbnail.png" />
-          <button id="pong-game" class="game-page-button">Play now!</button>
-        </article>
-
-        <div class="two columns">&nbsp;</div>
-        <!--Empty Div-->
-      </div>
-
-        <div class="two columns">&nbsp;</div>
-        <!--Empty Div-->
-      </div>
-
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
     </div>
-  </section>`,
+    <div class="row">
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
+
+      <article class="four columns game-card">
+        <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
+        <h3>Trivia</h3>
+        <img class="game-thumbnail" src="images/trivia-thumbnail.png" />
+        <p>Test your knowledge and prove you're the smartest!</p>
+        <button id="draw-game" class="game-page-button">Play now!</button>
+      </article>
+
+      <article class="four columns game-card">
+        <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
+        <h3>Pong</h3>
+        <img class="game-thumbnail" src="images/pong-thumbnail.png" />
+        <button id="pong-game" class="game-page-button">Play now!</button>
+      </article>
+
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
+    </div>
+
+    <div class="row">
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
+      <article class="four columns game-card">
+      <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
+          <h3>Pong</h3>
+          <img class="game-thumbnail" src="images/pong-thumbnail.png" />
+          <p>
+            Take control of a paddle and hit the ball past the other
+            player to score a point!
+          </p>
+          <button id="pong-game" class="button-primary game-page-button">
+            Play now!
+          </button>
+        </article>
+        <article class="four columns game-card">
+        <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
+        <h3>Pong</h3>
+        <img class="game-thumbnail" src="images/pong-thumbnail.png" />
+        <p>
+          Take control of a paddle and hit the ball past the other
+          player to score a point!
+        </p>
+        <button id="pong-game" class="button-primary game-page-button">
+          Play now!
+        </button>
+      </article>
+
+      <div class="two columns">&nbsp;</div>
+      <!--Empty Div-->
+    </div>
+  </section>
+</div>`,
   gameScreen: `       <div id="game-page" class="hidden">
   <section class="row page-description">
     <h2>Get ready to play!</h2>
