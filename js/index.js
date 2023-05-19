@@ -3,6 +3,7 @@ let mainHTML = document.querySelector("main"); // where HTML screens get injecte
 let gameLinks = {
   drawing: " https://preview.construct.net/#s5zwqdgf",
   pong: "https://stunning-crisp-45a8bb.netlify.app",
+  trivia: "https://preview.construct.net/#s5zwqdgf",
 };
 
 // handlers for nav buttons
@@ -27,6 +28,12 @@ window.addEventListener("load", () => {
   pongBtn.addEventListener("click", () => {
     gameIframe.src = gameLinks.pong;
     console.log("GAME 2", currentGame);
+  });
+
+  let triviaBtn = document.getElementById("trivia-game");
+  triviaBtn.addEventListener("click", () => {
+    gameIframe.src = gameLinks.trivia;
+    console.log("GAME 3", currentGame);
   });
 
   // handlers for different screens/elements

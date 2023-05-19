@@ -77,19 +77,20 @@ let screenStates = {
       <!--Empty Div-->
 
       <article class="four columns game-card">
-        <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
         <h3>Trivia</h3>
         <img class="game-thumbnail" src="images/trivia-thumbnail.png" />
         <p>Test your knowledge and prove you're the smartest!</p>
-        <button id="draw-game" class="game-page-button">Play now!</button>
+        <button id="trivia-game" class="button-primary game-page-button">Play now!</button>
       </article>
 
       <article class="four columns game-card">
-        <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
-        <h3>Pong</h3>
-        <img class="game-thumbnail" src="images/pong-thumbnail.png" />
-        <button id="pong-game" class="game-page-button">Play now!</button>
-      </article>
+      <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
+          <h3>Chess</h3>
+          <img class="game-thumbnail" src="images/chess-thumbnail.png" />
+          <button id="pong-game" class=" game-page-button">
+            Play now!
+          </button>
+        </article>
 
       <div class="two columns">&nbsp;</div>
       <!--Empty Div-->
@@ -100,25 +101,15 @@ let screenStates = {
       <!--Empty Div-->
       <article class="four columns game-card">
       <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
-          <h3>Pong</h3>
-          <img class="game-thumbnail" src="images/pong-thumbnail.png" />
-          <p>
-            Take control of a paddle and hit the ball past the other
-            player to score a point!
-          </p>
-          <button id="pong-game" class="button-primary game-page-button">
-            Play now!
-          </button>
-        </article>
+      <h3>Tic Tac Toe</h3>
+      <img class="game-thumbnail" src="images/ttt-thumbnail.png" />
+      <button id="pong-game" class="game-page-button">Play now!</button>
+    </article>
         <article class="four columns game-card">
         <div class="locked"><i class="fa-solid fa-lock fa-10x"></i></div>
-        <h3>Pong</h3>
-        <img class="game-thumbnail" src="images/pong-thumbnail.png" />
-        <p>
-          Take control of a paddle and hit the ball past the other
-          player to score a point!
-        </p>
-        <button id="pong-game" class="button-primary game-page-button">
+        <h3>Solitaire</h3>
+        <img class="game-thumbnail" src="images/cards-thumbnail.png" />
+        <button id="pong-game" class=" game-page-button">
           Play now!
         </button>
       </article>
