@@ -3,7 +3,7 @@ let mainHTML = document.querySelector("main"); // where HTML screens get injecte
 let gameLinks = {
   drawing: " https://preview.construct.net/#s5zwqdgf",
   pong: "https://stunning-crisp-45a8bb.netlify.app",
-  trivia: "https://preview.construct.net/#s5zwqdgf",
+  trivia: "https://serene-bavarois-cde51c.netlify.app",
 };
 
 // handlers for nav buttons
