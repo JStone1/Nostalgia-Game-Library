@@ -1,7 +1,8 @@
 let mainHTML = document.querySelector("main"); // where HTML screens get injected
 
 let gameLinks = {
-  drawing: " https://preview.construct.net/#s5zwqdgf",
+  drawing:
+    "https://646b25f19cd1090051bb38bf--super-meerkat-c1903c.netlify.app/",
   pong: "https://stunning-crisp-45a8bb.netlify.app",
   trivia: "https://serene-bavarois-cde51c.netlify.app",
 };
